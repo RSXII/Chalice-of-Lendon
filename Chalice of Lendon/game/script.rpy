@@ -26,8 +26,10 @@ label start:
 
     if cond1: 
         e "Hello, world!"
+        e "The condition is true."
     else:
         e "Goodbye, world!"
+        e "The condition is false."
 
     # This ends the game.
 
