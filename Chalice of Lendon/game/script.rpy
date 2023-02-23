@@ -1,36 +1,36 @@
-﻿# The script of the game goes in this file.
-
-# Declare characters used by this game. The color argument colorizes the
-# name of the character.
+﻿
+#These should be set at top level.
+define gomaStats = CharacterStats("Goma", 5)
+define ensukeStats = CharacterStats("Ensuke", 5)
+define ushiStats = CharacterStats("Ushi", 5)
+define chikaStats = CharacterStats("Chika", 5)
 
 define e = Character("Eileen")
 
 
-# The game starts here.
-
 label start:
-
-    # Show a background. This uses a placeholder by default, but you can
-    # add a file (named either "bg room.png" or "bg room.jpg") to the
-    # images directory to show it.
 
     scene bg room1
 
-    # This shows a character sprite. A placeholder is used, but you can
-    # replace it by adding a file named "eileen happy.png" to the images
-    # directory.
 
     show eileen happy
 
-    # These display lines of dialogue.
+    "This value should be 5 -> [gomaStats.amount]"
+    #We can add values depending on the choices made.
+    $ gomaStats.add(5)
+    "This value should be 10 -> [gomaStats.amount]"
+    #We can subtract values depending on the choices made.
+    $ gomaStats.subtract(5)
+    "This value should be 5 -> [gomaStats.amount]"
 
-    if cond1: 
+    if cond1:
         e "Hello, world!"
         e "The condition is true."
     else:
         e "Goodbye, world!"
         e "The condition is false."
 
-    # This ends the game.
+    jump the_town_in_the_mountains
+    
 
     return
