@@ -23,14 +23,11 @@ label start:
     $ gomaStats.subtract(5)
     "This value should be 5 -> [gomaStats.amount]"
 
-    if cond1:
-        e "Hello, world!"
-        e "The condition is true."
-    else:
-        e "Goodbye, world!"
-        e "The condition is false."
 
-    jump the_town_in_the_mountains
-    
-
+    menu:
+        "Do you want to go to the image map?"
+        "Yes":
+            jump imagemap_demo
+        "No":
+            jump the_town_in_the_mountains
     return
