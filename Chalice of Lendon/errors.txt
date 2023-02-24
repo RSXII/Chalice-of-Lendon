@@ -1,0 +1,10 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/functional/statTracker.rpy", line 2: 'renpy' is not a keyword argument or valid child for the screen statement.
+    renpy.restart_interaction()
+         ^
+
+Ren'Py Version: Ren'Py 8.0.3.22090809
+Thu Feb 23 12:19:17 2023

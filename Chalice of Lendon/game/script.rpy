@@ -15,6 +15,10 @@ label start:
 
     show eileen happy
 
+    jump tracker
+
+label questions:
+    
     "This value should be 5 -> [gomaStats.amount]"
     #We can add values depending on the choices made.
     $ gomaStats.add(5)
@@ -29,5 +33,5 @@ label start:
         "Yes":
             jump imagemap_demo
         "No":
-            jump the_town_in_the_mountains
+            jump tracker
     return
