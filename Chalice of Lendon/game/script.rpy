@@ -30,6 +30,11 @@ label questions:
     "Goma's values should be at 5 -> [gomaStats.amount]"
 
 
+label test:
+    
+    
+
+
     menu:
         "Do you want to go to the image map?"
         "Yes":
